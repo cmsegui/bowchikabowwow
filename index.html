@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="assets/js/paper-full.min.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="text/paperscript" canvas="myCanvas">
+        var path = new Path();
+        path.strokeColor = 'pink';
+        var start = new Point(100, 100);
+        path.moveTo(start);
+        path.lineTo(start + [ 100, -50 ]);
+
+        var myCircle = new Path.Circle(new Point(100, 70), 50);
+        myCircle.fillColor = 'pink';
+    </script>
+
+</head>
+
+<body>
+    <canvas id="myCanvas" resize></canvas>
+</body>
+
+</html>
